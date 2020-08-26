@@ -1,0 +1,62 @@
+.container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border: 1px solid red;
+  margin: auto;
+  background: url("./charmander.png");
+  background-size: contain;
+}
+.container div {
+  opacity: 0.7;
+}
+.container div.head > div {
+  background: #EE781E;
+  border: 1px solid #000;
+}
+.container div.head > div.face {
+  width: 215px;
+  height: 282px;
+  border-radius: 17ch 17ch 19ch 15ch;
+  position: relative;
+  margin: 18px auto;
+  transform: translateX(7px) rotate(2deg);
+  border-bottom: none;
+}
+.container div.head > div.face::after {
+  content: "";
+  display: block;
+  width: 125px;
+  height: 160px;
+  border-radius: 50%;
+  background: #ee781e;
+  position: absolute;
+  bottom: 19px;
+  left: -7px;
+}
+.container div.head > div.chin {
+  width: 170px;
+  height: 122px;
+  position: absolute;
+  top: 160px;
+  right: 255px;
+  border-radius: 0ch 0 9ch 44%;
+  transform: rotate(44deg);
+  z-index: 0;
+}
+.container div.head .eye {
+  width: 60px;
+  height: 87px;
+  border-radius: 29px 79% 42% 35%;
+  border-radius: 52%/83% 65% 38% 2.15ch;
+  position: absolute;
+  transform: rotate(-4deg);
+  top: 86px;
+  left: 122px;
+  z-index: 3;
+  border: 1px solid;
+  background: #000;
+  box-shadow: inset -7px 3px 1px -1px #fff;
+}
+
+/*# sourceMappingURL=charmander.css.map */
